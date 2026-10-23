@@ -1,0 +1,2 @@
+train,val,test,leaves,mean_samples_per_leaf,single_example_leaf_frac
+0.975,0.525,0.5,40,6.0,0.0

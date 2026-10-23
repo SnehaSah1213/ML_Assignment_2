@@ -1,0 +1,3 @@
+model,true,pred_clean,pred_masked,conf_clean,conf_masked,frac_learners_path_touches_block,frac_learners_changed_pred,disagreement_clean,disagreement_masked
+bagging,24,24,24,0.55,0.115,0.765,0.73,0.6918090452261306,0.9349246231155779
+boosting,24,24,3,0.12462945289077138,0.12021739405923296,0.2774711221916232,0.24704688112665424,,

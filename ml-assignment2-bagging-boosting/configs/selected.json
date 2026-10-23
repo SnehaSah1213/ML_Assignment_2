@@ -1,0 +1,13 @@
+{
+ "seed": 26008,
+ "frozen_depth": "None",
+ "frozen_min_leaf": 4,
+ "B_star": 200,
+ "boost_depth": 4,
+ "boost_rounds": 100,
+ "q3b_depths": [
+  "2",
+  "8",
+  "None"
+ ]
+}

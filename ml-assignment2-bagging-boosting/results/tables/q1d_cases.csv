@@ -1,0 +1,5 @@
+case,test_row,true,tree_pred,bag_pred,top3_votes,votes_for_true,B
+bag fixes tree,1,0,29,0,"[(0, 52), (1, 29), (4, 19)]",52,200
+bag fixes tree,4,2,29,2,"[(2, 35), (25, 21), (38, 11)]",35,200
+both wrong,0,0,29,25,"[(25, 21), (1, 13), (27, 13)]",8,200
+both wrong,7,3,37,30,"[(30, 37), (3, 18), (1, 16)]",18,200

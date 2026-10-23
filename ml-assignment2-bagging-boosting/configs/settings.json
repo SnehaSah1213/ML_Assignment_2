@@ -1,0 +1,16 @@
+{
+  "roll_number": "M26CSA008",
+  "seed_rule": "digits of roll number in order -> 26008, numpy.random.default_rng(seed)",
+  "dataset": "sklearn.datasets.fetch_olivetti_faces (40 identities x 10 images, 64x64), raw flattened pixels",
+  "split_per_identity": {"train": 6, "val": 2, "test": 2},
+  "mask_block": {"rows": [24, 39], "cols": [24, 39], "value": 0},
+  "q1a_grid": {"max_depth": [2, 4, 8, 16, null], "min_samples_leaf": [1, 2, 4]},
+  "q1b_B": [1, 5, 10, 25, 50, 100, 200],
+  "q2b_grid": {"depth": [1, 2, 3, 4], "rounds": [10, 25, 50, 100]},
+  "q2c_learners": [25, 50, 100],
+  "q3": {"refits": 30, "resample": "6 faces with replacement within each identity's 6 training faces",
+         "depths_q3b": "[shallow, selected, deeper]; selected was None so [2, 8, None] was used", "bagged_B_q3b": 100},
+  "rng_offsets": {"bagging_Q1": "seed+1", "samme_faces": "seed+2", "bagging_Q2c": "seed+3", "q3_resampling": "seed+7",
+                  "q3_samme": "seed+2000+r", "q3_bagging_selected": "seed+3000+r"},
+  "note": "These values are hard-coded in src/assignment2.py; this file documents them. configs/selected.json holds the choices made on validation accuracy."
+}
